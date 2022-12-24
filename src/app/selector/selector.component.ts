@@ -1,5 +1,8 @@
-import { Component } from '@angular/core';
-import { DateService } from '../share/date.services';
+import { Component, OnInit } from '@angular/core';
+import { DateService } from '../share/date.service';
+
+import * as moment from 'moment';
+
 
 @Component({
   selector: 'app-selector',
@@ -8,6 +11,5 @@ import { DateService } from '../share/date.services';
 })
 export class SelectorComponent {
 
-  constructor(private dateService: DateService) { }
-
+  constructor(private dateService: DateService) {}
 }

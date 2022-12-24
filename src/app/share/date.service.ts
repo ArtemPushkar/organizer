@@ -1,11 +1,19 @@
-import { Injectable } from "@angular/core";
-import * as moment from "moment";
+import { Injectable, OnInit } from "@angular/core";
+import * as moment from 'moment';
+import { Moment } from 'moment';
 import { BehaviorSubject } from "rxjs";
+
 
 @Injectable({
     providedIn: 'root'
 })
+export class DateService implements OnInit {
+    currentTime: any;
 
-export class DateService {
-    public date: BehaviorSubject<moment.Moment> = new BehaviorSubject(moment())
+    public date: BehaviorSubject<Moment> = new BehaviorSubject(moment());
+
+    ngOnInit(): void {
+        this.currentTime = moment().format("MMM Do YY");  
+    }
 }
+

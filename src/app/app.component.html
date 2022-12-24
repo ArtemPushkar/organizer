@@ -15,5 +15,9 @@
 <app-organizer></app-organizer>
 </div>
 
+<div>
+<app-foo-test [title]="expression ? 'one' : 'two' "></app-foo-test>
+<button (click)="expression = !expression"> {{ expression? 'one' : 'two' }} </button>
+</div>
 
 </div>

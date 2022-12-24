@@ -5,7 +5,7 @@ import { CalendarComponent } from './calendar/calendar.component';
 import { SelectorComponent } from './selector/selector.component';
 import { OrganizerComponent } from './organizer/organizer.component';
 import { MomentPipe } from './share/moment.pipe';
-import { DateService } from './share/date.service';
+import { FooTestComponent } from './foo-test/foo-test.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +13,8 @@ import { DateService } from './share/date.service';
     CalendarComponent,
     SelectorComponent,
     OrganizerComponent,
-    MomentPipe
+    MomentPipe,
+    FooTestComponent
   ],
   imports: [
     BrowserModule
