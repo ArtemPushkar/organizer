@@ -16,8 +16,8 @@
 </div>
 
 <div>
-<app-foo-test [title]="expression ? 'one' : 'two' "></app-foo-test>
-<button (click)="expression = !expression"> {{ expression? 'one' : 'two' }} </button>
+<app-foo-test (sayHi)="onSayHi($event)" [title]="expression ? 'one' : 'two' "></app-foo-test>
+<button (click)="expression = !expression"> {{ !expression? 'one' : 'two' }} </button>
 </div>
 
 </div>

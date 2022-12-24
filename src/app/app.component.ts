@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   expression = false;
+
+  onSayHi(text: string) {
+    console.log(text)
+  }
 }
