@@ -20,10 +20,17 @@ export class FooTestComponent implements OnInit {
   }
   
   @Output()
-  sayHi = new EventEmitter()
+  sayHi = new EventEmitter<string>()
 
   onSayHi() {
     this.sayHi.emit(this.title + 'hello!')
   }
+
+
+  @Input()
+  counter = 0;
+
+  @Output()
+  counterChange = new EventEmitter<number>()
 
 }

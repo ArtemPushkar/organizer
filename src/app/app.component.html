@@ -16,7 +16,7 @@
 </div>
 
 <div>
-<app-foo-test (sayHi)="onSayHi($event)" [title]="expression ? 'one' : 'two' "></app-foo-test>
+<app-foo-test [(counter)]="age" (sayHi)="onSayHi($event)" [title]="expression ? 'one' : 'two' "></app-foo-test>
 <button (click)="expression = !expression"> {{ !expression? 'one' : 'two' }} </button>
 </div>
 

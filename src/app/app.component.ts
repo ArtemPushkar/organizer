@@ -11,4 +11,7 @@ export class AppComponent {
   onSayHi(text: string) {
     console.log(text)
   }
+  
+age = 18;
+
 }
